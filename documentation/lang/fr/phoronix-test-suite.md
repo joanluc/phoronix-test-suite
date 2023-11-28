@@ -42,25 +42,31 @@ Une interface interactive simple et textuelle pour la suite de tests Phoronix.
 
 Cette option permet d'afficher des informations utiles aux développeurs lors du débogage de problèmes liés à la suite de tests Phoronix et/ou aux profils de test et aux suites de tests.
 
-#### shell
-A simple text-driven shell interface / helper to the Phoronix Test Suite. Ideal for those that may be new to the Phoronix Test Suite
+### shell
 
-#### system-info
-Display the installed system hardware and software information as detected by the Phoronix Test Suite Phodevi Library.
+ Une interface shell simple basée sur du texte / un assistant à la suite de tests Phoronix. Idéal pour ceux qui ne connaissent pas la suite de tests Phoronix 
 
-#### system-properties
-Display various hardware/software system properties detected by the Phoronix Device Interface (Phodevi) library.
+#### info-système
 
-#### system-sensors
-Display the installed system hardware and software sensors in real-time as detected by the Phoronix Test Suite Phodevi Library.
+ Affichez les informations matérielles et logicielles du système installé, telles qu'elles ont été détectées par la bibliothèque Phodevi de Phoronix Test Suite. 
 
+#### propriétés-système 
 
-## Test Installation
-#### force-install  [Test | Suite | OpenBenchmarking ID | Test Result]  ...
-This option will force the installation (or re-installation) of a test or suite. The arguments and process is similar to the install option but even if the test is installed, the entire installation process will automatically be executed. This option is generally used when debugging a test installation problem or wishing to re-install test(s) due to compiler or other environmental changes.
+Affichez diverses propriétés matérielles et logicielles du système détectées par la bibliothèque Phoronix Device Interface (Phodevi). 
 
-#### install  [Test | Suite | OpenBenchmarking ID | Test Result]  ...
-This option will install the selected test(s) inside the testing environment directory. The install process from downloading of the test files to the installation is fully automated. The install option needs to be supplied with the test name or suite as an argument. Optionally, a OpenBenchmarking.org ID or the name of a saved results file can be supplied as well and the test(s) to install will automatically be extracted from that information. If the test is already installed and was run by the latest version of the installation process, no action will be taken. Multiple arguments can be supplied to install additional tests at the same time.
+#### capteurs système
+
+Affichez les capteurs matériels et logiciels du système installés en temps réel, tels que détectés par la bibliothèque Phoronix Test Suite Phodevi.
+
+## Test de l'installation 
+
+#### force-install [Test | Suite | ID OpenBenchmarking | Résultat du test]... 
+
+Cette option forcera l'installation (ou la réinstallation) d'un test ou d'une suite. Les arguments et le processus sont similaires à l'option d'installation, mais même si le test est installé, l'ensemble du 
+
+#### install [Test | Suite | ID OpenBenchmarking | Résultat du test]... 
+
+Cette option installera le(s) test(s) sélectionné(s) dans le répertoire de l'environnement de test. Le processus d'installation, du téléchargement des fichiers de test à l'installation, est entièrement automatisé. L'option install doit être fournie avec le nom ou la suite de tests en tant qu'argument. En option, un identifiant de OpenBenchmarking.org ou le nom d'un fichier de résultats enregistré peuvent également être fournis et le(s) test(s) à installer seront automatiquement extraits de ces informations. Si le test est déjà installé et a été exécuté par la dernière version du processus d'installation, aucune action ne sera effectuée. Plusieurs arguments peuvent être fournis pour installer des tests supplémentaires en même temps.
 
 #### install-dependencies  [Test | Suite | OpenBenchmarking ID | Test Result]  ...
 This option will install the external dependencies needed by the selected test(s) using the distribution's package management system. For example, some tests depend upon GCC for compiling code. If GCC is not detected on the system, the Phoronix Test Suite will attempt to install GCC using the distribution's package management system. If you are running this command as a local user, you may be prompted for the root password while the process is running. For unsupported distributions, the dependency names will be displayed along with common names for the package. The install-dependencies option needs to be supplied with the test name or suite as an argument. When using the install option, the external dependencies are automatically checked.
