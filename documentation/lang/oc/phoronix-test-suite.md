@@ -10,34 +10,37 @@ Lo client Phoronix Tèst Seguida eth medish qu'ei un framework de tèst automati
 
 L'execucion de la seguida de tèstes Phoronix peu purmèr còp que pòt estar autan simple com l'emission d'ua comanda tau com *phoronix-tèst-seguida benchmark c-ray*, qui procediré a l'installacion d'un tèst CPU simple, qu'executaré lo tèst e que raportaré los resultats . En mei deus resultats, las informacions materiaus/logicielles deu sistèma que son collectadas de faiçon detalhada, los jornaus sistèma pertinents e autes atributs sistèma importants taus com los indicators deu compilator e l'estat deu sistèma. Los utilizators que pòden eventuaument telecargar los lors resultats sus Openbenchmarking.org entà partatjar los resultats dab autas personas, los comparar ad autes sistèmas e efectuar analisis mei apregondidas.
 
-## OpenBenchmarking.org
-OpenBenchmarking.org is an open, collaborative testing platform that makes the Phoronix Test Suite an even more extensible platform for conducting automated tests with complete integration into Phoronix Test Suite test client. OpenBenchmarking.org serves as a repository for storing test profiles, test suites, and result data. Test profiles and suites are stored in the OpenBenchmarking.org cloud to allow for new/updated tests to be seamlessly obtained via the Phoronix Test Suite without needing to manually update the Phoronix Test Suite client. OpenBenchmarking.org also makes it easy to facilitate side-by-side comparisons with any other results stored in the OpenBenchmarking.org cloud. Any Phoronix Test Suite user is permitted to upload their test results, test profiles, and suites to OpenBenchmarking.org.
+## Openbenchmarking.org 
 
-When finding a set of results on OpenBenchmarking.org, it's as easy as running the Phoronix Test Suite with that OpenBenchmarking.org ID to perform an automated side-by-side comparison (e.g. *phoronix-test-suite benchmark 1203160-BY-NVTEGRA3785* ).
+Openbenchmarking.org qu'ei ua platafòrma de tèst obèrta e collaborativa qui hè de Phoronix Tèst Seguida ua platafòrma enqüèra mei extensibla entà la realizacion de tèstes automatizats dab ua integracion completa dens lo client de tèst Phoronix Tèst Seguida. Openbenchmarking.org que sèrv de referenciau entà estocar los perfius de tèst, las seguidas de tèstes e las dadas de resultats. Los perfius e las seguidas de tèstes que son estocats dens lo cloud Openbenchmarking.org entà perméter l'obtencion transparenta de tèstes navèths/actualizats per la seguida de tèstes Phoronix shens aver a actualizar manuaument lo client Phoronix Tèst Seguida. Openbenchmarking.org que facilita egaument las comparasons còsta e còsta dab autes resultats estocats dens lo cloud Openbenchmarking.org. Tot utilizator de Phoronix Tèst Seguida qu'ei autorizat a telecargar los sons resultats de tèst, los sons perfius de tèst e las soas seguidas sus Openbenchmarking.org.
 
-Thanks to the wealth of test data (results, system logs, etc) from crowd-sourced benchmarking via the Phoronix Test Suite, a plethora of analytical features are also available from OpenBenchmarking.org.
+Quan recercatz un ensemble de resultats sus Openbenchmarking.org, que sufitz d'executar la seguida de tèstes Phoronix dab aqueth ID d'Openbenchmarking.org entà efectuar ua comparason automatizada còsta e còsta (per exemple, *phoronix-tèst-seguida benchmark 1203160-BY-NVTEGRA3785*). 
 
+Gràcias a la riquessa de las dadas de tèst (resultats, jornaus sistèma, etc.) gessidas de l'analisi comparativa participativa per la seguida de tèstes Phoronix, ua pletòra de foncionalitats analiticas que son egaument disponiblas au près d'Openbenchmarking.org.
 
 ## Phoromatic
-Phoromatic is a remote management system for the Phoronix Test Suite that allows the automatic scheduling of tests, remote installation of new tests, and the management of multiple test systems all through an intuitive, easy-to-use web interface. Tests can be scheduled to automatically run on a routine basis across multiple test systems. Phoromatic can also interface with revision control systems to offer support for issuing new tests on a context-basis, such as whenever a Git commit has been pushed or new daily image available. The test results are then available from this central, secure location.
 
-Phoromatic is an add-on to the Phoronix Test Suite that's primarily intended for enterprise users when facilitating tests across a wide-spectrum of hardware within a test lab or when needing to carry out tests on a routine basis.
+Phoromatic qu'ei un sistèma de gestion a distància entà la seguida de tèstes Phoronix qui permet la planificacion automatica deus tèstes, l'installacion a distància de navèths tèstes e la gestion de mantun sistèma de tèst, lo tot per ua interfàcia Web intuitiva e facile a utilizar. Los tèstes que pòden estar programats entà s'executar automaticament sus ua basa de rotina sus mantun sistèma de tèst. Phoromatic que pòt egaument si interfacer dab los sistèmas de contròle de revision entà auherir un supòrt entà l'emission de navèths tèstes sus ua basa contextuau, per exemple cada còp qu'un que cometó Git qu'ei estat possat o qu'un navèth imatge quotidian ei disponible. Los resultats deus tèstes que son puish disponibles a partir d'aqueth emplaçament centrau e securizat .
 
-A Phoromatic server can be started using *phoronix-test-suite start-phoromatic-server* (or the included systemd phoromatic-server service file). Clients can connect to the server using the *phoronix-test-suite phoromatic.connect* command as well as a phoromatic-client systemd service. See the Phoromatic section of the documentation for more information on setting up Phoromatic.
+Phoromatic qu'ei un module complementari de la seguida de tèstes Phoronix qui ei principaument destinat aus utilizators d'enterpresa quan facilitan los tèstes sus un large ventalh de materiau dens un laboratòri de tèst o quan deven efectuar tèstes de rotina. 
 
+Un servidor Phoromatic que pòt estar aviat dab l'ajuda de *phoronix-tèst-seguida start-phoromatic-server* (o deu fichèr de servici systemd phoromatic-server inclús). Los clients que's pòden connectar au servidor dab l'ajuda de la comanda *phoronix-tèst-seguida phoromatic.connect* atau com d'un servici systemd phoromatic-client. Que Reportatz a la seccion Phoromatic de la documentacion entà mei d'informacions sus la configuracion de Phoromatic.
 
-# User Options
-The following options are currently supported by the Phoronix Test Suite client. A list of available options can also be found by running *phoronix-test-suite help.*
+# Opcions de l'utilizator 
 
+Las opcions seguentas que son actuaument presas en carga peu client Phoronix Tèst Seguida. Ua lista de las opcions disponiblas que pòt egaument estar trobada en executant *phoronix-tèst-seguida help.* 
 
----
+--- 
 
-## System
-#### interactive
-A simple text-driven interactive interface to the Phoronix Test Suite.
+## Sistèma 
 
-#### php-conf
-This option will print information that is useful to developers when debugging problems with the Phoronix Test Suite and/or test profiles and test suites.
+#### interactiu 
+
+Ua interfàcia interactiva simpla e textuelle entà la seguida de tèstes Phoronix. 
+
+#### php-conf 
+
+Aquera opcion que permet d'afichar informacions utilas aus desvolopaires pendent lo débogage de problèmas ligats en seguit de tèstes Phoronix e/o aus perfius de tèst e a las seguidas de tèstes.
 
 #### shell
 A simple text-driven shell interface / helper to the Phoronix Test Suite. Ideal for those that may be new to the Phoronix Test Suite
